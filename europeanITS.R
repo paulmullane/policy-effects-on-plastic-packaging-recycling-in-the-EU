@@ -28,7 +28,7 @@ ireland <- europe[, c('year', 'ireland')]
 
 imports <- read_excel("import full.xlsx")
 exports <- read_excel("export full.xlsx")
-generation <- read_excel("C:/Users/20229798/OneDrive - University of Limerick/Desktop/Plastic recycling/EPR/generation full.xlsx")
+generation <- read_excel("generation full.xlsx")
 generation <- generation %>%
   mutate(across(everything(), as.double))
 
@@ -850,3 +850,4 @@ plot(y=ireland$ireland, x=ireland$year, main='Ireland', xlab='Year', ylab='%',
 abline(v=2007, col='red')
 
 dev.off()
+
